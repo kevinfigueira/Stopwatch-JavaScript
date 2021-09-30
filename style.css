@@ -1,0 +1,66 @@
+/*=============GERAL============*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: clockDigital;
+    src: url(fonts/digital-7-momo.ttf);
+}
+body{
+    background: rgb(39, 38, 38);
+    color:white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+/*=============TIME============*/
+.timeview{
+    font-family: clockDigital;
+    font-weight: 500;
+    font-style: italic;
+
+}
+.minutes, .seconds, .milliseconds{
+    font-size: 8rem;
+}
+.milliseconds{
+    font-size: 3rem;
+    margin-left: -5px;
+}
+.points{
+    font-size: 8rem;
+    margin-left: -15px;
+    margin-right: -20px;
+}
+/*=============BUTTONS============*/
+.buttons{
+    margin-top: 10px;
+}
+#start, #stop, #restart{
+    border-radius: 10px;
+    color:white ;
+    cursor: pointer;
+    border: none;
+    width: 80px;
+    height: 40px;
+}
+#start:hover, #stop:hover, #restart:hover{
+    background-color: rgba(255, 255, 255, 0.986);
+    color: black;
+}
+#start{
+    background: #59B87E;
+}
+#stop{
+    background: #F17979;
+}
+#restart{
+    background: #FBB629 ;
+}
