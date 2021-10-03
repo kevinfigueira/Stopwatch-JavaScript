@@ -1,10 +1,18 @@
 let [milliseconds, myTime, seconds, minutes, hours] = [0,'',0,0,0,];
 
 function start(){
+    let start = document.querySelector('#start');
+    let stop = document.querySelector('#stop');
+
+    start.style.display = 'none';
+    stop.style.display = 'inline';
+
+
     myTime = setInterval(()=>{
         time();
-    }, 10);
+    }, 10); 
 }
+
 
 function time(){    
     milliseconds++
@@ -36,6 +44,12 @@ function time(){
 }
 
 function stoped(){
+    let start = document.querySelector('#start');
+    let stop = document.querySelector('#stop');
+
+    stop.style.display = 'none';
+    start.style.display = 'inline';
+    
     clearInterval(myTime);
 }
 
@@ -48,4 +62,7 @@ function restart(){
     document.getElementById('minutes').innerText = '00';
     
 }
+
+
+
 

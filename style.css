@@ -43,24 +43,32 @@ body{
 .buttons{
     margin-top: 10px;
 }
-#start, #stop, #restart{
-    border-radius: 10px;
-    color:white ;
-    cursor: pointer;
-    border: none;
-    width: 80px;
-    height: 40px;
-}
-#start:hover, #stop:hover, #restart:hover{
-    background-color: rgba(255, 255, 255, 0.986);
-    color: black;
-}
+
 #start{
-    background: #59B87E;
+    width: 50px;
+    height: 60px;
+    background: none;
+    border: none;
+    background-image: url(img/start.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 #stop{
-    background: #F17979;
+    display: none;
+    width: 50px;
+    height: 60px;
+    background: none;
+    border: none;
+    background-image: url(img/paused.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 #restart{
-    background: #FBB629 ;
+    width: 50px;
+    height: 60px;
+    background: none;
+    border: none;
+    background-image: url(img/restart.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
