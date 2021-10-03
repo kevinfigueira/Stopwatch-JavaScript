@@ -38,8 +38,8 @@ function time(){
     }
     
     document.querySelector('#milliseconds').textContent = (milliseconds < 10) ? '0' + milliseconds : milliseconds;
-    document.querySelector('#seconds').textContent = (seconds < 1) ? '00' : '0' + seconds && (seconds < 10) ? '0' + seconds : seconds;
-    document.querySelector('#minutes').textContent = (minutes < 1) ? '00' : '0' + minutes && (minutes < 10) ? '0' + minutes : minutes;
+    document.querySelector('#seconds').textContent = (seconds < 10) ? '0' + seconds : seconds;
+    document.querySelector('#minutes').textContent = (minutes < 10) ? '0' + minutes : minutes;
 
 }
 
