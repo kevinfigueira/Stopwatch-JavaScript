@@ -19,56 +19,51 @@ body{
     align-items: center;
     width: 100vw;
     height: 100vh;
+    
 }
 /*=============TIME============*/
 .timeview{
     font-family: clockDigital;
     font-weight: 500;
     font-style: italic;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
 }
 .minutes, .seconds, .milliseconds{
-    font-size: 6.5rem;
+    font-size: 6rem;
+}
+.minutes, .seconds, .milliseconds:not(:last-child){
+    margin-right: -.5rem;
+}
+.minutes, .seconds, .milliseconds:not(:first-child){
+    margin-left: -.55rem;
 }
 .milliseconds{
     font-size: 3rem;
-    margin-left: -5px;
+    align-self: flex-end;
+    margin-bottom: .65rem;
 }
 .points{
-    font-size: 8rem;
-    margin-left: -15px;
-    margin-right: -20px;
+    font-size: 5rem;
+
 }
 /*=============BUTTONS============*/
 .buttons{
     margin-top: 10px;
 }
 
-#start{
-    width: 50px;
-    height: 60px;
+#start, #restart, #stop{
     background: none;
     border: none;
-    background-image: url(img/start.png);
-    background-repeat: no-repeat;
     cursor: pointer;
+}
+.img_start, .img_stoped, .img_restart{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
 }
 #stop{
     display: none;
-    width: 50px;
-    height: 60px;
-    background: none;
-    border: none;
-    background-image: url(img/paused.png);
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-#restart{
-    width: 50px;
-    height: 60px;
-    background: none;
-    border: none;
-    background-image: url(img/restart.png);
-    background-repeat: no-repeat;
-    cursor: pointer;
 }
