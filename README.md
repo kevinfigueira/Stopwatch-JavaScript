@@ -16,5 +16,5 @@
 <div align="center">Click here!</div>
 
 <div align="center">
-        <a href=" https://kevinfigueira.github.io/Stopwatch-JavaScript/">Access Stopwatch</a>
+        <a href="https://kevinfigueira.github.io/Stopwatch-JavaScript/">Access Stopwatch</a>
 </div>
